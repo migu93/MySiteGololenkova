@@ -1,0 +1,22 @@
+:root{
+    --color1: #f3d2ff;
+    --color2:#de83ff;
+}
+header, footer, section, main{
+    padding: 100px 0;
+}
+
+header, footer{
+    background: var(--color1);
+    background: linear-gradient(93deg, rgba(243,210,255,1) 0%, rgba(210,86,255,1) 100%);
+}
+
+.imgLogo{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.btnCatalog{
+    margin-left: 100px;
+    margin-right: 100px;
+}
