@@ -114,3 +114,27 @@ header, footer{
         box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
     }
 }
+.dropdown:hover >.dropdown-menu{
+    display: block !important;
+}
+.dropdown-submenu:hover > .dropdown-menu{
+    display: block !important;
+    left: 100%;
+    margin-top: -37px;
+}
+
+.dropdown-item{
+    font-size: small; /* 13px */
+}
+.dropdown-toggle::after{
+    margin-bottom: -2px;
+}
+.dropdown-menu li a.active{
+    color:#fff;
+}
+
+.custom-toggle-arrow{
+    font-size: 18px;
+    margin-top: 1px;
+    line-height: 12px;
+}
