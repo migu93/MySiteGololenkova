@@ -8,8 +8,6 @@
     <meta name="generator" content="Hugo 0.83.1">
     <title>Checkout example · Bootstrap v5.0</title>
 
-    
-
     <!-- Bootstrap core CSS -->
     <style>
       .bd-placeholder-img {
@@ -33,8 +31,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
   </head>
   <body style="background: #eaebfe">
-    
-<div class="container col-md-8">
+  <div class="container col-md-8">
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../resourses/logo.png" alt="" width="200">
@@ -45,7 +42,7 @@
       <div class="col-md-7 col-lg-12">
         <form class="needs-validation" novalidate>
           <div class="row g-3">
-            <div class="col-sm-6">
+            <div class="col-sm-6 js-form">
               <label for="firstName" class="form-label">Имя</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
@@ -74,8 +71,8 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted"></span></label>
-              <input type="email" class="form-control" id="email" placeholder="">
-              <div class="invalid-feedback">
+              <input type="email" class="form-control input js-input js-input-email" name="email" id="email" placeholder="">
+              <div class="invalid-feedback" id="message">
                 Please enter a valid email address for shipping updates.
               </div>
             </div>
@@ -196,8 +193,8 @@
             </div>
 
             <div class="col-md-3">
-              <label for="zip" class="form-label">Почтовый индекс</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <label for="regexp-mask" class="form-label">Почтовый индекс</label>
+              <input type="text" class="form-control" id="regexp-mask" placeholder="" required>
               <div class="invalid-feedback">
                 Zip code required.
               </div>
@@ -316,11 +313,9 @@
       </ul>
     </div>
   </div>
-</footer>
 
-
+  <script src="../js/regExp.js"></script>
+  <script src="../js/form-validation.js"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script src="form-validation.js"></script>
   </body>
 </html>
