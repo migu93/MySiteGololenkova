@@ -56,7 +56,7 @@
 
             <div class="text-end">
                 <button type="button" class="btn btn-light text-dark mx-2 me-2">Личный кабинет</button>
-                <a href="/" class=" align-items-center text-white text-decoration-none">
+                <a class=" align-items-center text-white text-decoration-none">
                     <img src="Личный%20кабинет/Иконка%20корзины.png" class="mx-2" style="height: 40px">
                 </a>
                 <a href="/" class=" align-items-center text-white text-decoration-none">
@@ -67,284 +67,32 @@
     </div>
 </header >
 
-<main class="container py-5">
-    <div class="row g-5">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                <span class="fs-4">Меню</span>
-            </a>
-            <hr>
-            <ul class="nav nav-tabs flex-column mb-auto" id="nav-tab" role="tablist">
-                <li>
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Персональная информация</button>
-                </li>
-                <li>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Избранное</button>
-                </li>
-                <li>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Корзина</button>
-                </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="resourses/photo.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>Nik Varnitsky</strong>
-                </a>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </div>
+<div data-reflow-type="product">
+    <div class="reflow-product">
+        <div class="ref-media">
+            <div class="ref-preview"><img class="ref-image active" src="https://cdn.bootstrapstudio.io/products/product-30_md.jpg" data-reflow-preview-type="image" /></div>
+            <div class="ref-sale-badge">SALE</div>
         </div>
-        <div class="col-md-5 col-4 ">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span style="color: black">Информация об аккаунте</span>
-                    </h4>
-                    <ul class="list-group m-4">
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Имя пользователя</h6>
-                                <small class="text-muted">Nik Varnitsky</small>
+        <div class="ref-product-data">
+            <h2 class="ref-name">Piggy Bank</h2>
+            <div class="ref-categories"><span class="ref-category">Toys</span></div><strong class="ref-price ref-on-sale"><s class="ref-original-price">$100.00</s>$23.51</strong><span data-reflow-type="add-to-cart" data-reflow-shoppingcart-url data-reflow-addtocart-text data-reflow-product="43218622" data-reflow-variant="199976733_s">
+                    <div class="ref-product-controls">
+                        <div class="ref-variant"><label><span>Size</span><select class="ref-form-control  ref-field-variants" name="variant-state" required>
+                                    <option value="199976733_s">S</option>
+                                    <option value="199976733_m">M</option>
+                                    <option value="199976733_l" disabled>L</option>
+                                </select></label></div><span data-reflow-variant="199976733_s" data-reflow-product="43218622" data-reflow-max-qty="999" data-reflow-quantity="1">
+                            <div class="ref-quantity-widget">
+                                <div class="ref-decrease"><span></span></div><input type="text" value="1" />
+                                <div class="ref-increase"><span></span></div>
                             </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Фамилия</h6>
-                                <small class="text-muted">Варницкий</small>
-                            </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Имя</h6>
-                                <small class="text-muted">Никита</small>
-                            </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Email</h6>
-                                <small class="text-muted">njkita008@yandex.ru</small>
-                            </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Телефон</h6>
-                                <small class="text-muted">+7 (963) 425 67-23</small>
-                            </div>
-                        </li>
-
-                    </ul>
-                    <form class="card p-2">
-                        <p>изменить пароль</p>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Новый пароль">
-                            <button style="background: #0d6efd;" type="submit" class="btn btn-secondary">Изменить</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="col-lg-12 order-md-last">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="text-primary">Ваша корзина</span>
-                            <span class="badge bg-primary rounded-pill">3</span>
-                        </h4>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">Название продукта</h6>
-                                    <small class="text-muted">Описание</small>
-                                </div>
-                                <span class="text-muted">$12</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">Название продукта</h6>
-                                    <small class="text-muted">Описание</small>
-                                </div>
-                                <span class="text-muted">$8</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">Название продукта</h6>
-                                    <small class="text-muted">Brief description</small>
-                                </div>
-                                <span class="text-muted">$5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between bg-light">
-                                <div class="text-success">
-                                    <h6 class="my-0">Название скидик</h6>
-                                    <small>Описание</small>
-                                </div>
-                                <span class="text-success">−$5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between">
-                                <span>Total (USD)</span>
-                                <strong>$20</strong>
-                            </li>
-                        </ul>
+                        </span><a class="ref-button" href="#">Add to Cart</a>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="row row-cols-2 col-lg-12 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button type="button" class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top"  width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>Thumbnail</text></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button type="button" class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="text-align: center">
-                                <svg class="bd-placeholder-img card-img-bottom" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text style="text-align: center" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                                <div class="card-body text-center">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-                                <div class="card-body">
-                                    <p class="card-text">Описание товара</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">К товару</button>
-                                            <button class="like-button btn mx-2"></button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
+                </span>
+            <div class="ref-description">Et numquam <b>est</b> vitae.</div>
         </div>
     </div>
-
-</main>
+</div>
 
 <footer style="background: #8E9AAF" class="container-fluid py-4 shadow-lg">
     <div class="row">
