@@ -5,12 +5,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Large-Dropdown-Menu-BS3-LMBS3.css">
+    <link rel="stylesheet" href="css/Large-Dropdown-Menu-BS3.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/cardTovar.css">
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <link href="css/style.css">
+    <link rel="stylesheet" href="css/cardTovar.css">
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
     <title>Document</title>
 </head>
 
@@ -37,109 +37,73 @@
     </div>
     <div class="mx-3 px-3 py-2 border-bottom mb-3">
         <div class="container d-flex flex-wrap justify-content-center">
+            <nav class="navbar navbar-default navbar-static">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Large Dropdown Menu</a>
+                </div>
 
-            <div class="dropdown">
-                <button
-                        class="btn mx-3 px-5 btn-primary dropdown-toggle text-light ms-3"
-                        type="button"
-                        id="MyAccountDDM"
-                        data-bs-toggle="dropdown"
-                        data-bs-auto-close="outside"
-                        aria-expanded="false">
-                    Каталог
-                </button>
 
-                <ul class="dropdown-menu dropdown-menu" aria-labelledby="MyAccountDDM" id="AppDropDownId">
-                    <div class="mx-3 px-3">
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown dropdown-large">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 
-                        <li class="dropdown-item">
-                            <div class="btn-group dropend">
-                                <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Инструменты
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Для косметологов
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Для парикмахеров</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="dropdown-menu dropdown-menu-large row">
+                                <li class="col-sm-3">
+                                    <img src="http://via.placeholder.com/200x250"/>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Button groups</li>
+                                        <li><a href="#">Basic example</a></li>
+                                        <li><a href="#">Button toolbar</a></li>
+                                        <li><a href="#">Sizing</a></li>
+                                        <li><a href="#">Nesting</a></li>
+                                        <li><a href="#">Vertical variation</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-header">Button dropdowns</li>
+                                        <li><a href="#">Single button dropdowns</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header">Input groups</li>
+                                        <li><a href="#">Basic example</a></li>
+                                        <li><a href="#">Sizing</a></li>
+                                        <li><a href="#">Checkboxes and radio addons</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="dropdown-header">Navs</li>
+                                        <li><a href="#">Tabs</a></li>
+                                        <li><a href="#">Pills</a></li>
+                                        <li><a href="#">Justified</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Navbar</li>
+                                        <li><a href="#">Default navbar</a></li>
+                                        <li><a href="#">Buttons</a></li>
+                                        <li><a href="#">Text</a></li>
+                                        <li><a href="#">Non-nav links</a></li>
+                                        <li><a href="#">Component alignment</a></li>
+                                        <li><a href="#">Fixed to top</a></li>
+                                        <li><a href="#">Fixed to bottom</a></li>
+                                        <li><a href="#">Static top</a></li>
+                                        <li><a href="#">Inverted navbar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
                         </li>
-                        <li class="dropdown-item">
-                            <div class="btn-group dropend">
-                                <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Волосы
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Уход
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Краска для волос</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Пудры, окислители</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown-item">
-                            <div class="btn-group dropend">
-                                <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Макияж
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Ресницы
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Тени</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Помада</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Пудра</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown-item">
-                            <div class="btn-group dropend">
-                                <a type="button" class="dropdown-item dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Маникюр
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            Наращивание
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Кисти для ногтей</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Гель-лаки</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Лаки-окислители</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </div>
+                    </ul>
 
-
-                </ul>
-            </div>
+                </div><!-- /.nav-collapse -->
+            </nav>
             <form class="col-12 col-lg-5 mb-2 mb-lg-0 me-lg-auto">
                 <input type="search" style="" class="form-control" placeholder="Поиск..." aria-label="Search">
             </form>
@@ -187,7 +151,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="wcf-left"><span class="price">8900 ₽</span></div>
-                                <div class="wcf-right"><a href="#" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
+                                <div class="wcf-right"><a href="ProductPage/ProductPageMashinka.html" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
                                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 22.5C20.663 22.5 21.2989 22.7634 21.7678 23.2322C22.2366 23.7011 22.5 24.337 22.5 25C22.5 25.663 22.2366 26.2989 21.7678 26.7678C21.2989 27.2366 20.663 27.5 20 27.5C19.337 27.5 18.7011 27.2366 18.2322 26.7678C17.7634 26.2989 17.5 25.663 17.5 25C17.5 24.337 17.7634 23.7011 18.2322 23.2322C18.7011 22.7634 19.337 22.5 20 22.5ZM20 23.75C19.6685 23.75 19.3505 23.8817 19.1161 24.1161C18.8817 24.3505 18.75 24.6685 18.75 25C18.75 25.3315 18.8817 25.6495 19.1161 25.8839C19.3505 26.1183 19.6685 26.25 20 26.25C20.3315 26.25 20.6495 26.1183 20.8839 25.8839C21.1183 25.6495 21.25 25.3315 21.25 25C21.25 24.6685 21.1183 24.3505 20.8839 24.1161C20.6495 23.8817 20.3315 23.75 20 23.75ZM8.75 22.5C9.41304 22.5 10.0489 22.7634 10.5178 23.2322C10.9866 23.7011 11.25 24.337 11.25 25C11.25 25.663 10.9866 26.2989 10.5178 26.7678C10.0489 27.2366 9.41304 27.5 8.75 27.5C8.08696 27.5 7.45107 27.2366 6.98223 26.7678C6.51339 26.2989 6.25 25.663 6.25 25C6.25 24.337 6.51339 23.7011 6.98223 23.2322C7.45107 22.7634 8.08696 22.5 8.75 22.5ZM8.75 23.75C8.41848 23.75 8.10054 23.8817 7.86612 24.1161C7.6317 24.3505 7.5 24.6685 7.5 25C7.5 25.3315 7.6317 25.6495 7.86612 25.8839C8.10054 26.1183 8.41848 26.25 8.75 26.25C9.08152 26.25 9.39946 26.1183 9.63388 25.8839C9.8683 25.6495 10 25.3315 10 25C10 24.6685 9.8683 24.3505 9.63388 24.1161C9.39946 23.8817 9.08152 23.75 8.75 23.75ZM22.5 7.5H5.34125L8.525 15H18.75C18.9444 15.0003 19.1361 14.955 19.3098 14.8677C19.4835 14.7804 19.6342 14.6536 19.75 14.4975L23.5 9.4975H23.5013C23.6399 9.3117 23.7241 9.091 23.7445 8.86008C23.7649 8.62916 23.7207 8.39711 23.6169 8.18986C23.513 7.98262 23.3535 7.80835 23.1563 7.68652C22.959 7.56469 22.7318 7.50011 22.5 7.5ZM18.75 16.25H8.5825L7.625 18.2L7.5 18.75C7.5 19.0815 7.6317 19.3995 7.86612 19.6339C8.10054 19.8683 8.41848 20 8.75 20H22.5V21.25H8.75C8.31471 21.2502 7.8869 21.1368 7.50892 20.9209C7.13093 20.705 6.81586 20.3942 6.59488 20.0191C6.3739 19.6441 6.25468 19.2179 6.249 18.7826C6.24332 18.3474 6.35138 17.9182 6.5625 17.5375L7.4625 15.695L2.9225 5H1.25V3.75H3.75L4.81125 6.25H22.5C22.9723 6.25004 23.435 6.3839 23.8344 6.63607C24.2338 6.88823 24.5536 7.24839 24.7567 7.67482C24.9599 8.10125 25.0381 8.5765 24.9822 9.04553C24.9264 9.51456 24.7388 9.95818 24.4412 10.325L20.7987 15.1825C20.5685 15.5123 20.2619 15.7815 19.9052 15.9674C19.5485 16.1532 19.1522 16.2502 18.75 16.25Z" fill="black"/></svg>
                                 </a></div>
@@ -209,7 +173,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="wcf-left"><span class="price">14990 ₽</span></div>
-                                <div class="wcf-right"><a href="#" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
+                                <div class="wcf-right"><a href="ProductPage/ProductPageSyshar.html" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
                                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 22.5C20.663 22.5 21.2989 22.7634 21.7678 23.2322C22.2366 23.7011 22.5 24.337 22.5 25C22.5 25.663 22.2366 26.2989 21.7678 26.7678C21.2989 27.2366 20.663 27.5 20 27.5C19.337 27.5 18.7011 27.2366 18.2322 26.7678C17.7634 26.2989 17.5 25.663 17.5 25C17.5 24.337 17.7634 23.7011 18.2322 23.2322C18.7011 22.7634 19.337 22.5 20 22.5ZM20 23.75C19.6685 23.75 19.3505 23.8817 19.1161 24.1161C18.8817 24.3505 18.75 24.6685 18.75 25C18.75 25.3315 18.8817 25.6495 19.1161 25.8839C19.3505 26.1183 19.6685 26.25 20 26.25C20.3315 26.25 20.6495 26.1183 20.8839 25.8839C21.1183 25.6495 21.25 25.3315 21.25 25C21.25 24.6685 21.1183 24.3505 20.8839 24.1161C20.6495 23.8817 20.3315 23.75 20 23.75ZM8.75 22.5C9.41304 22.5 10.0489 22.7634 10.5178 23.2322C10.9866 23.7011 11.25 24.337 11.25 25C11.25 25.663 10.9866 26.2989 10.5178 26.7678C10.0489 27.2366 9.41304 27.5 8.75 27.5C8.08696 27.5 7.45107 27.2366 6.98223 26.7678C6.51339 26.2989 6.25 25.663 6.25 25C6.25 24.337 6.51339 23.7011 6.98223 23.2322C7.45107 22.7634 8.08696 22.5 8.75 22.5ZM8.75 23.75C8.41848 23.75 8.10054 23.8817 7.86612 24.1161C7.6317 24.3505 7.5 24.6685 7.5 25C7.5 25.3315 7.6317 25.6495 7.86612 25.8839C8.10054 26.1183 8.41848 26.25 8.75 26.25C9.08152 26.25 9.39946 26.1183 9.63388 25.8839C9.8683 25.6495 10 25.3315 10 25C10 24.6685 9.8683 24.3505 9.63388 24.1161C9.39946 23.8817 9.08152 23.75 8.75 23.75ZM22.5 7.5H5.34125L8.525 15H18.75C18.9444 15.0003 19.1361 14.955 19.3098 14.8677C19.4835 14.7804 19.6342 14.6536 19.75 14.4975L23.5 9.4975H23.5013C23.6399 9.3117 23.7241 9.091 23.7445 8.86008C23.7649 8.62916 23.7207 8.39711 23.6169 8.18986C23.513 7.98262 23.3535 7.80835 23.1563 7.68652C22.959 7.56469 22.7318 7.50011 22.5 7.5ZM18.75 16.25H8.5825L7.625 18.2L7.5 18.75C7.5 19.0815 7.6317 19.3995 7.86612 19.6339C8.10054 19.8683 8.41848 20 8.75 20H22.5V21.25H8.75C8.31471 21.2502 7.8869 21.1368 7.50892 20.9209C7.13093 20.705 6.81586 20.3942 6.59488 20.0191C6.3739 19.6441 6.25468 19.2179 6.249 18.7826C6.24332 18.3474 6.35138 17.9182 6.5625 17.5375L7.4625 15.695L2.9225 5H1.25V3.75H3.75L4.81125 6.25H22.5C22.9723 6.25004 23.435 6.3839 23.8344 6.63607C24.2338 6.88823 24.5536 7.24839 24.7567 7.67482C24.9599 8.10125 25.0381 8.5765 24.9822 9.04553C24.9264 9.51456 24.7388 9.95818 24.4412 10.325L20.7987 15.1825C20.5685 15.5123 20.2619 15.7815 19.9052 15.9674C19.5485 16.1532 19.1522 16.2502 18.75 16.25Z" fill="black"/></svg>
                                 </a></div>
@@ -231,7 +195,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="wcf-left"><span class="price">290 ₽</span></div>
-                                <div class="wcf-right"><a href="#" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
+                                <div class="wcf-right"><a href="ProductPage/ProductPageRasp.html" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
                                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 22.5C20.663 22.5 21.2989 22.7634 21.7678 23.2322C22.2366 23.7011 22.5 24.337 22.5 25C22.5 25.663 22.2366 26.2989 21.7678 26.7678C21.2989 27.2366 20.663 27.5 20 27.5C19.337 27.5 18.7011 27.2366 18.2322 26.7678C17.7634 26.2989 17.5 25.663 17.5 25C17.5 24.337 17.7634 23.7011 18.2322 23.2322C18.7011 22.7634 19.337 22.5 20 22.5ZM20 23.75C19.6685 23.75 19.3505 23.8817 19.1161 24.1161C18.8817 24.3505 18.75 24.6685 18.75 25C18.75 25.3315 18.8817 25.6495 19.1161 25.8839C19.3505 26.1183 19.6685 26.25 20 26.25C20.3315 26.25 20.6495 26.1183 20.8839 25.8839C21.1183 25.6495 21.25 25.3315 21.25 25C21.25 24.6685 21.1183 24.3505 20.8839 24.1161C20.6495 23.8817 20.3315 23.75 20 23.75ZM8.75 22.5C9.41304 22.5 10.0489 22.7634 10.5178 23.2322C10.9866 23.7011 11.25 24.337 11.25 25C11.25 25.663 10.9866 26.2989 10.5178 26.7678C10.0489 27.2366 9.41304 27.5 8.75 27.5C8.08696 27.5 7.45107 27.2366 6.98223 26.7678C6.51339 26.2989 6.25 25.663 6.25 25C6.25 24.337 6.51339 23.7011 6.98223 23.2322C7.45107 22.7634 8.08696 22.5 8.75 22.5ZM8.75 23.75C8.41848 23.75 8.10054 23.8817 7.86612 24.1161C7.6317 24.3505 7.5 24.6685 7.5 25C7.5 25.3315 7.6317 25.6495 7.86612 25.8839C8.10054 26.1183 8.41848 26.25 8.75 26.25C9.08152 26.25 9.39946 26.1183 9.63388 25.8839C9.8683 25.6495 10 25.3315 10 25C10 24.6685 9.8683 24.3505 9.63388 24.1161C9.39946 23.8817 9.08152 23.75 8.75 23.75ZM22.5 7.5H5.34125L8.525 15H18.75C18.9444 15.0003 19.1361 14.955 19.3098 14.8677C19.4835 14.7804 19.6342 14.6536 19.75 14.4975L23.5 9.4975H23.5013C23.6399 9.3117 23.7241 9.091 23.7445 8.86008C23.7649 8.62916 23.7207 8.39711 23.6169 8.18986C23.513 7.98262 23.3535 7.80835 23.1563 7.68652C22.959 7.56469 22.7318 7.50011 22.5 7.5ZM18.75 16.25H8.5825L7.625 18.2L7.5 18.75C7.5 19.0815 7.6317 19.3995 7.86612 19.6339C8.10054 19.8683 8.41848 20 8.75 20H22.5V21.25H8.75C8.31471 21.2502 7.8869 21.1368 7.50892 20.9209C7.13093 20.705 6.81586 20.3942 6.59488 20.0191C6.3739 19.6441 6.25468 19.2179 6.249 18.7826C6.24332 18.3474 6.35138 17.9182 6.5625 17.5375L7.4625 15.695L2.9225 5H1.25V3.75H3.75L4.81125 6.25H22.5C22.9723 6.25004 23.435 6.3839 23.8344 6.63607C24.2338 6.88823 24.5536 7.24839 24.7567 7.67482C24.9599 8.10125 25.0381 8.5765 24.9822 9.04553C24.9264 9.51456 24.7388 9.95818 24.4412 10.325L20.7987 15.1825C20.5685 15.5123 20.2619 15.7815 19.9052 15.9674C19.5485 16.1532 19.1522 16.2502 18.75 16.25Z" fill="black"/></svg>
                                     </i></a></div>
@@ -253,7 +217,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="wcf-left"><span class="price">2100 ₽</span></div>
-                                <div class="wcf-right"><a href="#" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
+                                <div class="wcf-right"><a href="ProductPage/ProductPageBarshing.html" class="buy-btn"><svg width="30" height="30" viewBox="0 0 30 30"
                                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 22.5C20.663 22.5 21.2989 22.7634 21.7678 23.2322C22.2366 23.7011 22.5 24.337 22.5 25C22.5 25.663 22.2366 26.2989 21.7678 26.7678C21.2989 27.2366 20.663 27.5 20 27.5C19.337 27.5 18.7011 27.2366 18.2322 26.7678C17.7634 26.2989 17.5 25.663 17.5 25C17.5 24.337 17.7634 23.7011 18.2322 23.2322C18.7011 22.7634 19.337 22.5 20 22.5ZM20 23.75C19.6685 23.75 19.3505 23.8817 19.1161 24.1161C18.8817 24.3505 18.75 24.6685 18.75 25C18.75 25.3315 18.8817 25.6495 19.1161 25.8839C19.3505 26.1183 19.6685 26.25 20 26.25C20.3315 26.25 20.6495 26.1183 20.8839 25.8839C21.1183 25.6495 21.25 25.3315 21.25 25C21.25 24.6685 21.1183 24.3505 20.8839 24.1161C20.6495 23.8817 20.3315 23.75 20 23.75ZM8.75 22.5C9.41304 22.5 10.0489 22.7634 10.5178 23.2322C10.9866 23.7011 11.25 24.337 11.25 25C11.25 25.663 10.9866 26.2989 10.5178 26.7678C10.0489 27.2366 9.41304 27.5 8.75 27.5C8.08696 27.5 7.45107 27.2366 6.98223 26.7678C6.51339 26.2989 6.25 25.663 6.25 25C6.25 24.337 6.51339 23.7011 6.98223 23.2322C7.45107 22.7634 8.08696 22.5 8.75 22.5ZM8.75 23.75C8.41848 23.75 8.10054 23.8817 7.86612 24.1161C7.6317 24.3505 7.5 24.6685 7.5 25C7.5 25.3315 7.6317 25.6495 7.86612 25.8839C8.10054 26.1183 8.41848 26.25 8.75 26.25C9.08152 26.25 9.39946 26.1183 9.63388 25.8839C9.8683 25.6495 10 25.3315 10 25C10 24.6685 9.8683 24.3505 9.63388 24.1161C9.39946 23.8817 9.08152 23.75 8.75 23.75ZM22.5 7.5H5.34125L8.525 15H18.75C18.9444 15.0003 19.1361 14.955 19.3098 14.8677C19.4835 14.7804 19.6342 14.6536 19.75 14.4975L23.5 9.4975H23.5013C23.6399 9.3117 23.7241 9.091 23.7445 8.86008C23.7649 8.62916 23.7207 8.39711 23.6169 8.18986C23.513 7.98262 23.3535 7.80835 23.1563 7.68652C22.959 7.56469 22.7318 7.50011 22.5 7.5ZM18.75 16.25H8.5825L7.625 18.2L7.5 18.75C7.5 19.0815 7.6317 19.3995 7.86612 19.6339C8.10054 19.8683 8.41848 20 8.75 20H22.5V21.25H8.75C8.31471 21.2502 7.8869 21.1368 7.50892 20.9209C7.13093 20.705 6.81586 20.3942 6.59488 20.0191C6.3739 19.6441 6.25468 19.2179 6.249 18.7826C6.24332 18.3474 6.35138 17.9182 6.5625 17.5375L7.4625 15.695L2.9225 5H1.25V3.75H3.75L4.81125 6.25H22.5C22.9723 6.25004 23.435 6.3839 23.8344 6.63607C24.2338 6.88823 24.5536 7.24839 24.7567 7.67482C24.9599 8.10125 25.0381 8.5765 24.9822 9.04553C24.9264 9.51456 24.7388 9.95818 24.4412 10.325L20.7987 15.1825C20.5685 15.5123 20.2619 15.7815 19.9052 15.9674C19.5485 16.1532 19.1522 16.2502 18.75 16.25Z" fill="black"/></svg>
                                     </i></a></div>
@@ -266,7 +230,9 @@
     </div>
 
 </main>
-
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdn.reflowhq.com/v2/toolkit.min.js"></script>
 <footer style="background: #8E9AAF" class="container-fluid shadow-lg py-5">
     <div class="row">
         <div class="col-12 col-md">
