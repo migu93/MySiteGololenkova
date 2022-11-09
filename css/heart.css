@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.like-button {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+  cursor: pointer;
+}
+.like-button::before {
+  font-size: 2rem;
+  color: #000;
+  content: "♥";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.like-button::after {
+  font-size: 2rem;
+  color: #ff3252;
+  content: "♥";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.like-button.liked::after {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
