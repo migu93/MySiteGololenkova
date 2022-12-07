@@ -198,7 +198,7 @@ a.buy-btn:hover , a.buy-btn:active, a.buy-btn:focus{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .wsk-cp-product{
         margin:40px auto;
         max-width: 200px;
