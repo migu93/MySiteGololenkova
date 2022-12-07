@@ -528,4 +528,18 @@ a .uil {
     .blockHidden {
         display: none;
     }
+    .btnCatalog {
+        margin-bottom: 10px;
+    }
+    .product {
+        height: 250px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .product {
+        height: 200px;
+        width: 150px;
+    }
 }
