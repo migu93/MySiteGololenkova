@@ -2,10 +2,10 @@
   "name": "js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.cjs",
   "type": "module",
   "scripts": {
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon index.cjs"
   },
   "author": "",
   "license": "ISC",
