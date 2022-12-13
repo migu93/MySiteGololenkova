@@ -2,6 +2,7 @@ const path = require('path');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Post = require('./models/post.cjs');
+const {validation} = require('./validations/auth.js')
 
 const express = require('express');
 const app = express();
@@ -23,37 +24,9 @@ app.listen(PORT, (err)=>{
     err ? console.log(err) : console.log(`listening port ${PORT}`);
 })
 
-app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
-app.use(express.urlencoded({extended: false}));
-app.use(express.static('styles'));
+app.use(express.json());
+app.post('/auth/register', (req, res) =>{
 
-app.get('/', (req, res) =>{
-    const title = 'Home';
-    res.render(createPath('index'), {title});
-})
-
-app.post('/add-post', (req, res)=>{
-    const {title, author, text} = req.body;
-    const post = new Post({title, author, text});
-    post.save().then((result)=>{
-        res.send(result )
-    })
-        .catch((err) => {
-            console.log(err);
-            res.render(createPath('error'), {title: 'Error'});
-        })
-})
-
-app.get('/posts/:id', (req, res)=>{
-    const title = 'Post';
-    const post = {
-        id: '1',
-        text: 'lorem isdiuf sdiu fisdou fsd fiosduf fusdoiuf',
-        title: 'Post title',
-        date: '08.12.2022',
-        author: 'Nikita',
-    };
-    res.render(createPath('post'), {title, post});
 })
 
 app.get('/', (req, res) => {
